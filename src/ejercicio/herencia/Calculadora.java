@@ -40,8 +40,11 @@ public class Calculadora {
         return primerNumero / segundoNumero;
     }
     
-    public double raizCuadrada(double numero){
-        return Math.sqrt(numero);
+    public double raizCuadrada(double primerNumero ){
+        double resultado;
+        resultado= Math.sqrt(primerNumero);
+        return resultado;
+        
     }
     
     }

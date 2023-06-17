@@ -2,17 +2,17 @@
 package ejercicio.herencia;
 
 
-public class CalculadoraEspecial  extends EjercicioHerencia {
+public class CalculadoraEspecial  extends Calculadora {
 
     CalculadoraEspecial(String jose_veliz) {
         
     }
-       public boolean esPrimo(int numeroBuscado){
-        if(numeroBuscado < 2){
+       public boolean esPrimo(int primerNumero){
+        if(primerNumero < 2){
             return false;
         }
-        for(int i = 2; i <= Math.sqrt(numeroBuscado); i++){
-            if(numeroBuscado % i == 0){
+        for(int i = 2; i <= Math.sqrt(primerNumero); i++){
+            if(primerNumero % i == 0){
                 return false;
             }
         }
